@@ -1,0 +1,245 @@
+<template>
+            <section id="voice" class="sec sec--voice">
+              <div class="sec__in">
+                <div class="cmn-sub cmn-subhead--voice fade-up">
+                  <h2 class="cmn-sub-head">企画者・製作者からの声</h2>
+                </div>
+                <ul class="voice fade-up">
+                  <li class="fade-up">
+                    <div class="voice-image">
+                      <div><img src="~/assets/img/voice/image01.png" class="img--fit" alt="sample"></div>
+                    </div>
+                    <div class="voice-content">
+                      <div class="voice-comment">
+                        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                      </div>
+                      <div class="voice-box voice-box--large">
+                        <div>
+                          <h3 class="voice-name">吉崎亮介</h3>
+                          <p>国立研究開発法人・国立がん研究センター研究所・がん分子修飾制御学分野・分野長<br>東京医科歯科大学大学院医歯学総合研究科・連携大学院教授 (連携教授)<br>国立研究開発法人・理化学研究所・革新知能統合研究センター・がん探索医療研究チーム・チームリーダー<br>内閣府/官民研究開発投資拡大プログラム（PRISM）研究代表<br>一般社団法人・日本メディカルAI学会・代表理事</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="fade-up">
+                    <div class="voice-image">
+                      <div><img src="~/assets/img/voice/image01.png" class="img--fit" alt="sample"></div>
+                    </div>
+                    <div class="voice-content">
+                      <div class="voice-comment">
+                        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                      </div>
+                      <div class="voice-box">
+                        <div>
+                          <h3 class="voice-name">吉崎亮介</h3>
+                          <p>株式会社キカガク代表取締役社長</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="fade-up">
+                    <div class="voice-image">
+                      <div><img src="~/assets/img/voice/image01.png" class="img--fit" alt="sample"></div>
+                    </div>
+                    <div class="voice-content">
+                      <div class="voice-comment">
+                        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                      </div>
+                      <div class="voice-box">
+                        <div>
+                          <h3 class="voice-name">吉崎亮介</h3>
+                          <p>株式会社キカガク代表取締役社長</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </section>
+</template>
+
+<style lang="scss" scoped>
+@import '~/assets/scss/base/_variable.scss';
+
+/*  voice
+------------------------------------------------------------------------------*/
+
+/* ---------------------------------- section */
+
+.sec--voice {
+  padding: vw-sp(60) 0 vw-sp(80) 0;
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .sec--voice {
+    padding: vw-pc(140) 0 vw-pc(80) 0;
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .sec--voice {
+    padding: 140px 0 80px 0;
+  }
+}
+
+
+/* ---------------------------------- heading */
+
+.cmn-subhead--voice {
+  margin-bottom: vw-sp(80);
+  text-align: center;
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .cmn-subhead--voice {
+    margin-bottom: vw-pc(50);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .cmn-subhead--voice {
+    margin-bottom: 50px;
+  }
+}
+
+
+
+/* ---------------------------------- component */
+
+.voice li {
+  position: relative;
+  margin: 0 auto;
+  padding: vw-sp(35) 0 vw-sp(85) 0;
+  border-bottom: vw-sp(3) solid $color-main;
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .voice li {
+    display: flex;
+    justify-content: space-between;
+    padding: vw-pc(25) 0 vw-pc(60) 0;
+    width: vw-pc(1000);
+    border-bottom: vw-pc(2) solid $color-main;
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .voice li {
+    padding: 25px 0 60px 0;
+    width: 1000px;
+    border-bottom: 2px solid $color-main;
+  }
+}
+
+.voice-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto vw-sp(30) auto;
+  width: vw-sp(257);
+  height: vw-sp(257);
+  background-color: $color-base;
+  border: vw-sp(3) solid $color-main;
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.004);
+}
+
+.voice-image > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: vw-sp(247);
+  height: vw-sp(247);
+  transform: translate(-50%, -50%);
+  img {
+    border-radius: 50%;
+  }
+}
+
+.voice-comment {
+  margin-bottom: 1.2em;
+  p {
+    font-size: 0.875em;
+    line-height: 1.8em;
+  }
+}
+
+.voice-box {
+  position: relative;
+  text-align: right;
+  > div {
+    display: inline-block;
+    padding: .3em 1em;
+    border: 1px solid $color-main;
+    color: $color-main;
+    p {
+      font-size: 0.875em;
+      font-weight: 700;
+      text-align: left;
+      line-height: 1.8em;
+    }
+  }
+}
+
+.voice-box--large {
+  > div {
+    display: block;
+    padding: 1.2em 1.5em;
+  }
+}
+
+.voice-name {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  padding: .3em 1.2em .4em .7em;
+  background-color: $color-main;
+  color: $color-base;
+  font-weight: 700;
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .voice-image {
+    margin: 0;
+    width: vw-pc(156);
+    height: vw-pc(156);
+    border: vw-pc(2) solid $color-main;
+  }
+
+  .voice-image > div {
+    width: vw-pc(148);
+    height: vw-pc(148);
+  }
+
+  .voice-content {
+    width: vw-pc(810);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .voice-image {
+    width: 156px;
+    height: 156px;
+    border: 2px solid $color-main;
+  }
+
+  .voice-image > div {
+    width: 148px;
+    height: 148px;
+  }
+
+  .voice-content {
+    width: 810px;
+  }
+}
+
+</style>

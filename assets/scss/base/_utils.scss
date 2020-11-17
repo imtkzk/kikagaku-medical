@@ -1,0 +1,96 @@
+// main: ../style.scss
+@import "~/assets/scss/base/_variable.scss";
+
+/*  UTILIS
+------------------------------------------------------------------------------*/
+
+.paragraph p {
+  margin-bottom: 1.5em;
+  line-height: 2em;
+}
+
+.paragraph p:last-child {
+  margin-bottom: 0;
+}
+
+.navy {
+  color: $color-main;
+}
+
+.green {
+  color: $color-green;
+}
+
+.gray {
+  color: #888888;
+}
+
+.list li {
+  padding-left: 1.2em;
+  text-indent: -1.2em;
+  line-height: 2em;
+}
+
+.list--dot li {
+  font-weight: 700;
+}
+
+.list--dot li:before {
+  margin-right: 0.1em;
+  content: "・";
+}
+
+.list--kome li {
+  font-size: 0.875em;
+}
+
+.list--kome li:before {
+  margin-right: 0.2em;
+  content: "※";
+}
+
+/*  配置
+-------------------------------------------------------*/
+
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.center {
+  text-align: center;
+}
+
+@media screen and (max-width: $breakpoint1-max) {
+  .none--sp {
+    display: none !important;
+  }
+  .br__sp {
+    display: block;
+  }
+  .br--pc {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $breakpoint1) {
+  .none--pc {
+    display: none !important;
+  }
+  .br__sp {
+    display: inline;
+  }
+  .br--sp {
+    display: none;
+  }
+}
+
+/*  画像
+-------------------------------------------------------*/
+
+.img--fit {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}

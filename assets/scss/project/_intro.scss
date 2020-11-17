@@ -1,0 +1,138 @@
+// main: ../style.scss
+
+/*  intro
+------------------------------------------------------------------------------*/
+
+/* ---------------------------------- section */
+
+.sec--intro {
+  padding: vw-sp(80) 0;
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .sec--intro {
+    padding: vw-pc(215) 0 vw-pc(100) 0;
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .sec--intro {
+    padding: 215px 0 100px 0;
+  }
+}
+
+
+/* ---------------------------------- heading */
+
+.intro-content {
+  position: relative;
+}
+
+.intro-content:before {
+  content: '';
+  position: absolute;
+  top: vw-sp(140);
+  left: vw-sp(100);
+  display: inline-block;
+  width: vw-sp(560);
+  height: vw-sp(594);
+  background-image: url(../img/intro/bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.intro-image {
+  width: 100%;
+}
+
+.intro-desc {
+  margin: 1em 0 0 0;
+  padding: 1.5em 0 1.5em 1.3em;
+  border-left: vw-sp(3) solid $color-text;
+  p {
+    font-size: vw-sp(30);
+    font-weight: 700;
+    letter-spacing: .2em;
+    strong {
+      color: $color-main;
+      font-size: 1.2em;
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoint1-max) {
+
+  .intro-content {
+    margin: 0 0 vw-sp(40) vw-sp(-15);
+    width: vw-sp(730);
+  }
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .intro {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .intro-content {
+    width: vw-pc(630);
+  }
+
+  .intro-content:before {
+    top: vw-pc(-125);
+    left: vw-pc(-85);
+    width: vw-pc(560);
+    height: vw-pc(594);
+  }
+
+  .intro-image {
+    width: vw-pc(570);
+    > div {
+      position: absolute;
+      top: vw-pc(-120);
+      right: vw-pc(-95);
+      width: vw-pc(700);
+    }
+  }
+
+  .intro-desc {
+    padding: 2em 0 2em 1.8em;
+    border-left: vw-pc(2) solid $color-text;
+    p {
+      font-size: vw-pc(20);
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .intro-content {
+    width: 630px;
+  }
+
+  .intro-content:before {
+    top: -125px;
+    left: -85px;
+    width: 560px;
+    height: 594px;
+  }
+
+  .intro-image {
+    width: 570px;
+    > div {
+      top: -120px;
+      right: -95px;
+      width: 700px;
+    }
+  }
+
+  .intro-desc {
+    border-left: 2px solid $color-text;
+    p {
+      font-size: 20px; font-size: 2.0rem;
+    }
+  }
+}
